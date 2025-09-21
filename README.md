@@ -14,7 +14,7 @@ This module adds reporting endpoints under `/api/reports` using different types 
   Returns all users and all profiles, combining both matched and unmatched rows.
 
 - **User-Role Combos — CROSS JOIN**  
-  Returns every possible combination of users and roles (Cartesian product).
+  Returns every possible combination of users and roles.
 
 - **Referrals — SELF JOIN**  
   Shows which users referred other users by joining the users table to itself.
