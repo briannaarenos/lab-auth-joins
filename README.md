@@ -1,7 +1,6 @@
 # Lab-Auth-Joins
 This module adds reporting endpoints under `/api/reports` using different types of SQL JOINs.
 
----
 
 ## JOIN Explanations
 
@@ -27,14 +26,14 @@ This module adds reporting endpoints under `/api/reports` using different types 
 
 ## `/api/reports` Endpoints
 
-| Endpoint                                | Method | Purpose | Join Type |
-|-----------------------------------------|--------|---------|-----------|
-| `/api/reports/users-with-profiles`      | GET    | Show users with their profile details. | LEFT JOIN |
-| `/api/reports/roles-right-join`         | GET    | Show all roles and their assigned users (if any). | RIGHT JOIN |
-| `/api/reports/profiles-full-outer`      | GET    | Show all users and all profiles, matched or not. | FULL OUTER JOIN (via UNION) |
-| `/api/reports/user-role-combos`         | GET    | Show every possible user-role pairing. | CROSS JOIN |
-| `/api/reports/referrals`                | GET    | Show referral relationships between users. | SELF JOIN |
-| `/api/reports/latest-login`             | GET    | Show each user’s most recent login timestamp. | Aggregation / Subquery |
+| Endpoint                                | Method | Purpose |
+|-----------------------------------------|--------|---------|
+| `/api/reports/users-with-profiles`      | GET    | Show users with their profile details. LEFT JOIN was used. |
+| `/api/reports/roles-right-join`         | GET    | Show all roles and their assigned users (if any). RIGHT JOIN was used. |
+| `/api/reports/profiles-full-outer`      | GET    | Show all users and all profiles, matched or not. FULL OUTER JOIN (via UNION) was used. |
+| `/api/reports/user-role-combos`         | GET    | Show every possible user-role pairing. CROSS JOIN was used. |
+| `/api/reports/referrals`                | GET    | Show referral relationships between users. SELF JOIN was used. |
+| `/api/reports/latest-login`             | GET    | Show each user’s most recent login timestamp. Aggregation / Subquery was used. |
 
 ---
 
