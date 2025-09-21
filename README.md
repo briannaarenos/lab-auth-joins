@@ -22,7 +22,6 @@ This module adds reporting endpoints under `/api/reports` using different types 
 - **Latest Login — Aggregation / Subquery**  
   Returns each user’s most recent login activity, using `MAX(login_time)` per user.
 
----
 
 ## `/api/reports` Endpoints
 
@@ -35,7 +34,6 @@ This module adds reporting endpoints under `/api/reports` using different types 
 | `/api/reports/referrals`                | GET    | Show referral relationships between users. SELF JOIN was used. |
 | `/api/reports/latest-login`             | GET    | Show each user’s most recent login timestamp. Aggregation / Subquery was used. |
 
----
 
 ## Authorization
 
