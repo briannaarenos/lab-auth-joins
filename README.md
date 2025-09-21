@@ -40,5 +40,5 @@ This module adds reporting endpoints under `/api/reports` using different types 
 ## Authorization
 
 All `/api/reports` endpoints require a **Bearer Token**.  
-- ✅ **Positive test**: Call endpoint with a valid token → returns data.  
-- ❌ **Negative test**: Call endpoint without/with invalid token → returns an error (`missing bearer token` or `invalid/expired token`).  
+- **Positive test**: Call endpoint with a valid token → returns data.  
+- **Negative test**: Call endpoint without/with invalid token → returns an error (`missing bearer token` or `invalid/expired token`).  
